@@ -25,9 +25,13 @@ public class OauthAttributes {
 
     public static OauthAttributes of(String registrationId, String userNameAttributeName, Map<String,Object> attributes){
         if("naver".equals(registrationId)){
+            System.out.println("네이버 연동 성공");
             return ofNaver("id",attributes);
+        }else{
+            System.out.println("구글 연동");
         }
         return ofGoogle(userNameAttributeName, attributes);
+
     }
     public static OauthAttributes ofGoogle(String userNameAttributeName, Map<String, Object> attributes){
         return OauthAttributes.builder().name((String) attributes.get("name"))
