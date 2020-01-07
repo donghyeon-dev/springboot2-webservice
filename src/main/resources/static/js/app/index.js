@@ -15,7 +15,7 @@ var main ={
         },
     save : function(){
         var data = {
-        title:$('#title').val(),2
+        title:$('#title').val(),
         author:$('#author').val(),
         content:$('#content').val()
         };
