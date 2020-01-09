@@ -1,4 +1,5 @@
 package com.donghyeon.book.springboot.web;
+
 import com.donghyeon.book.springboot.config.auth.SecurityConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
