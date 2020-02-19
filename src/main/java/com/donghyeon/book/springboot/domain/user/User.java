@@ -18,7 +18,7 @@ import javax.persistence.Id;
 @Entity
 public class User extends BaseTimeEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // IDENTITY :  자동으로 증감되는 ID를 가지게 된다.
     private Long id;
 
     @Column(nullable = false)
